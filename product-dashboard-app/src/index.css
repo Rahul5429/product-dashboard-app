@@ -1,0 +1,149 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f9fafb, #eef1f7);
+  padding: 30px;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Filter Panel */
+div:has(select) {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+select,
+input,
+button {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+select:focus,
+input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px #c7d2fe;
+}
+
+button {
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #3730a3, #4f46e5);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(79, 70, 229, 0.3);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f4f6fa;
+  color: #374151;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+tr:hover {
+  background-color: #eef1f7;
+  transition: 0.2s ease-in-out;
+}
+
+/* Price Edit Button */
+button[title='Edit Price'] {
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+  color: #000;
+  border: none;
+}
+
+button[title='Edit Price']:hover {
+  background: linear-gradient(to right, #d97706, #f59e0b);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+/* Delete Button */
+button[title='Delete'] {
+  background: linear-gradient(to right, #ef4444, #f87171);
+  border: none;
+  color: white;
+}
+
+button[title='Delete']:hover {
+  background: linear-gradient(to right, #b91c1c, #ef4444);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+/* Input fields for editing */
+input[type='number'],
+input[type='text'] {
+  width: 100%;
+  max-width: 120px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+input[type='number']:focus,
+input[type='text']:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px #c7d2fe;
+}
